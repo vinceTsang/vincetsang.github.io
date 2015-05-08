@@ -19,6 +19,8 @@ title: Archives
 			{% else %}
 				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			{% endif %}
+
+			<p class="meta">&nbsp;&nbsp;&nbsp;&nbsp;Posted on <span class="postdate">{{ post.date | date: "%b %d, %Y" }}</span></p>
 		</article>
 	{% endif %}
 	{% endfor %}
