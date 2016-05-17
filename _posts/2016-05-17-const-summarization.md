@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "const 限定符总结"
+title: "const限定符总结"
 date: 2016-05-17 16:28
 categories: vince
 ---
