@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "const限定符总结"
-date: 2016-05-17 16:28
+date: 2016-05-17 08:28
 categories: vince
 ---
 
