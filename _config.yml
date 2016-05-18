@@ -4,6 +4,6 @@ description: Vince's blog
 
 permalink: /:year/:month/:day/:title/
 paginate: 10
-pygments: true
+highlighter: rouge
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
