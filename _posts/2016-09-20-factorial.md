@@ -42,27 +42,25 @@ int main()
     int i,j;
     while(cin>>n) {
         memset(f,0,sizeof(f));
-		f[0]=1;
-		int place=1;
-		for(i=2;i<=n;i++)
-		{
-			int carry=0;
-			for(j=0;j<place;j++)
-			{
-				int tmp=f[j]*i+carry;
-				carry = tmp/10000;
-				f[j] = tmp%10000;
-			}
-			if(carry>0){
+        f[0]=1;
+        int place=1;
+        for(i=2;i<=n;i++) {
+            int carry=0;
+            for(j=0;j<place;j++) {
+                int tmp=f[j]*i+carry;
+                carry = tmp/10000;
+                f[j] = tmp%10000;
+            }
+            if(carry>0) {
                 f[place]=carry;
                 ++place;
-			}
-		}
-		cout<<f[--place];
-		for(int i=place-1;i>=0;i--){
+            }
+        }
+        cout<<f[--place];
+        for(int i=place-1;i>=0;i--) {
             cout<<setw(4)<<setfill('0')<<f[i];
-		}
-		cout<<endl;
+        }
+        cout<<endl;
     }
     return 0;
 }
